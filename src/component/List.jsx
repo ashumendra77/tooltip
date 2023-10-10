@@ -1,7 +1,8 @@
 import React from "react";
 
-function ListItem() {
+function ListItem(props) {
     return <div>
+        <h3>{props.heading}</h3>
         <ul>
             <li>HTML AND CSS</li>
             <li>node js and Mongodb</li>

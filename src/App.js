@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1>Welcom to React</h1>
-      <ListItem />
+      <ListItem heading="Item List" />
     </div>
   );
 }
