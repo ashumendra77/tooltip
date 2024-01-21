@@ -1,29 +1,17 @@
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 
-export default function Colordemo({ props }) {
+export default function Mytooltip({ pos }) {
 
-    console.log(props);
-
-    const name = 'Ashu';
-    const lname = 'Singh';
     return (
 
         <div>
-            {/* <h1>Hello {name + " " + lname}</h1>
-            <h1>Colors Component</h1> */}
-            {/* <button>Hover on me!</button> */}
-            {/* <div data-tip="msg to show" data-for='toolTip1' data-place='top'>Tooltip</div> */}
+            <div><h1 style={{ "backgroundColor": "blue", "padding": "20px" }}>Tooltip App</h1></div>
             <ReactTooltip id="my-tooltip" />
 
-            <a data-tooltip-id="my-tooltip"  data-tooltip-place= "bottom" data-tooltip-content="Hello world!">
-                ◕‿‿◕
+            <a data-tooltip-id="my-tooltip" data-tooltip-place={pos} data-tooltip-content="Hello Tooltip!">
+                Hello Ninja!
             </a>
-            {/* <Tooltip id="my-tooltip" /> */}
-            <ul>
-                {/* {props.map((c) =>
-                    <li>{c}</li>
-                )} */}
-            </ul>
+
         </div>
     )
 }
